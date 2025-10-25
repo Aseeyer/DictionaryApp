@@ -85,7 +85,7 @@ if __name__ == "__main__":
             courses = input("Courses (comma-separated): ").split(",")
             city = input("City: ")
             zip_code = input("Zip: ")
-            if create_student(username, name, age, [c.strip() for c in courses], city, zip_code):
+            if create_student(username, name, age, [course.strip() for course in courses], city, zip_code):
                 print("Student added!")
             else:
                 print("Username already exists!")
@@ -135,3 +135,4 @@ if __name__ == "__main__":
 
         else:
             print("Invalid choice. Try again.")
+            strip()

@@ -60,5 +60,4 @@ class TestDictionaryApplication(unittest.TestCase):
         self.assertEqual(DA.total_students(), 2)
 
 
-if __name__ == "__main__":
-    unittest.main()
+
